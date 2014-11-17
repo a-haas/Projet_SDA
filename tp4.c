@@ -5,4 +5,13 @@ typedef struct tas_binaire{
 	int racine;
 	struct tas_binaire* ag;
 	struct tas_binaire* ad;
-}Tas;
+	static int compteur = 0;
+}Noeud,*Tas;
+
+Noeud creerNoeud(int racine)
+{
+	Noeud n;
+	n.racine = racine;
+	return n;
+}
+
